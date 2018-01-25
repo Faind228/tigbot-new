@@ -1,0 +1,42 @@
+{
+  "name": "guidebot",
+  "version": "2.3.5",
+  "description": "A boilerplate example bot with command handler and reloadable commands. Updated and Maintained by the Idiot's Guide Community",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {"node": "8.4.0"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An-Idiots-Guide/guidebot.git"
+  },
+  "author": "Evelyne Lachance <eslachance@gmail.com> (http://evie.codes)",
+  "contributors": [
+    "York (http://anidiots.guide)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/An-Idiots-Guide/guidebot/issues"
+  },
+  "homepage": "https://github.com/An-Idiots-Guide/guidebot#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "cheerio": "^1.0.0-rc.2",
+    "dateformat": "^3.0.2",
+    "discord.js": "^11.3.0",
+    "enmap": "^0.4.2",
+    "enmap-level": "^1.0.0",
+    "figlet": "^1.2.0",
+    "google": "^2.1.0",
+    "got": "^8.0.3",
+    "humanize-duration": "^3.12.1",
+    "mojang-api": "0.0.2",
+    "moment": "^2.20.1",
+    "moment-duration-format": "^2.2.0",
+    "npm-api": "^0.4.10",
+    "npm-api-dependents": "^1.0.0",
+    "request": "^2.83.0"
+  }
+}
