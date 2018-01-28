@@ -8,10 +8,17 @@
 // you don't want to put in a command.
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
   const code = args.join(" ");
+  const Discord = require("discord.js")
   try {
     const evaled = eval(code);
     const clean = await client.clean(client, evaled);
-    message.channel.send(`\`\`\`js\n${clean}\n\`\`\``);
+    var embed = new Discord.RichEmbed()
+     .setColor(0xed8218) 
+     .setTitle(`Eval`)
+     .addField("Input :inbox_tray: ", "```" + code + "```")
+     .addField("Output :outbox_tray: ", "```" + clean + "```" )
+     message.channel.send({embed})
+    
   } catch (err) {
     message.channel.send(`\`ERROR\` \`\`\`xl\n${await client.clean(client, err)}\n\`\`\``);
   }
